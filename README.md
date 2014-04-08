@@ -40,17 +40,6 @@ wget https://raw.github.com/jtratner/vim-flavored-markdown/master/syntax/ghmarkd
 mv ghmarkdown.vim ~/.vim/syntax/
 ```
 
-### Use flavored-markdown by default
-
-Add the following `autocmd` to your `.vimrc`:
-
-```viml
-augroup markdown
-    au!
-    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
-```
-
 See it in action
 ----------------
 
